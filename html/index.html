@@ -24,8 +24,8 @@
                 <!-- nav coté gauche -->
                 <span class="nav_span__left">
                     <!-- logo de la ville de liévin -->
-                    <a class="nav__logo" href="logo"> <img src="../assets/liévin_logo.png"
-                            alt="logo de la ville de liévin"></a>
+                    <a class="nav__logo" href="http://127.0.0.1:5500/html/index.html"> <img
+                            src="../assets/liévin_logo.png" alt="logo de la ville de liévin"></a>
                 </span>
 
 
@@ -92,33 +92,33 @@
 
                     <span class="top_main__link_directaccess">
                         <a href="./lievin.html">
-                            <p class="top_main__square_text"><em>Liévin</em><br>l' entreprenante</p>
+                            <p class="top_main__square_text">Liévin<br>l' entreprenante</p>
                         </a>
                     </span>
 
 
                     <span class="top_main__link_directaccess">
                         <a href="./mesdemarches.html">
-                            <p class="top_main__square_text"><em>Mes démarches</em><br>en ligne</p>
+                            <p class="top_main__square_text">Mes démarches<br>en ligne</p>
                         </a>
                     </span>
 
 
                     <span class="top_main__link_directaccess">
                         <a href="./jeparticipe.html">
-                            <p class="top_main__square_text"><em>Je participe</em><br>lievin.fr</p>
+                            <p class="top_main__square_text">Je participe<br>lievin.fr</p>
                         </a>
 
                     </span>
                     <span class="top_main__link_directaccess">
                         <a href="./espacefamille.html">
-                            <p class="top_main__square_text"><em>Espace</em><br>famille</p>
+                            <p class="top_main__square_text">Espace<br>famille</p>
                         </a>
                     </span>
 
                     <span class="top_main__link_directaccess">
                         <a href="./investir.html">
-                            <p class="top_main__square_text"><em>Investir</em><br>à liévin</p>
+                            <p class="top_main__square_text">Investir<br>à liévin</p>
                         </a>
                     </span>
                 </span>
@@ -132,17 +132,19 @@
 
             <!-- calendrier goggle et météo -->
             <div class="main__calendar_weather">
-                <span class="calendar">
+                <div class="calendar_weather">
                     <iframe class="calendar"
                         src="https://calendar.google.com/calendar/embed?src=fr.french%23holiday%40group.v.calendar.google.com&ctz=UTC"
                         style="border: 0" width="220" height="190" frameborder="0" scrolling="no">
                     </iframe>
-                </span>
-                <span class="weather">
-                    <a target="_blank" href="https://hotelmix.fr/weather/lievin-148270"><img class="weather__img"
-                            src="https://w.bookcdn.com/weather/picture/11_148270_1_3_FFFFFF_118_2373CA_333333_FFFFFF_0_FFFFFF_333333_0_6.png?scode=32211&domid=581&anc_id=59400"
-                            alt="booked.net" width="150" height="150"/></a>
-                </span>
+
+
+                    <div class="divweather"><a class="weather" target="_blank"
+                            href="https://hotelmix.fr/weather/lievin-148270"><img class="weather__img"
+                                src="https://w.bookcdn.com/weather/picture/11_148270_1_3_FFFFFF_118_2373CA_333333_FFFFFF_0_FFFFFF_333333_0_6.png?scode=32211&domid=581&anc_id=59400"
+                                alt="booked.net" width="150" height="150" /> </a>
+                    </div>
+                </div>
 
             </div>
 
@@ -151,18 +153,19 @@
 
 
         <!-- menu du bas avec blason ville de liévin + adresse mairie + input contactez-nous + horaires -->
-        <div class="bottom__main">
+        <div class="bottom_main__news_event">
+            
+                <div class="bottom_main__event">
+                    <h3 class="event__title">Evenements</h3>
+                    <a href="./evenement.html" class="event__img"></a>
+                </div>
 
-            <div class="bottom_main__event">
-                <h3 class="event__title">Evenements</h3>
-                <a href="./evenement.html" class="event__img"></a>
-            </div>
-
-            <div class="bottom_main__news">
-                <h3 class="news__title">Articles/Actu</h3>
-                <a href="./news.html" class="event__img"></a>
-            </div>
-
+                <div class="bottom_main__news">
+                    <h3 class="news__title">Articles/Actu</h3>
+                    <a href="./news.html" class="event__img"></a>
+                </div>
+            </div>          
+        </div>
             <div class="bottom_main__coordon_contact">
                 <span class="coordon__blason"> </span>
                 <p class="coordon_adress__text"> Mairie de Liévin <br> 45 rue EdouardVaillant, <br> 62800 Liévvin <br>
@@ -178,7 +181,7 @@
                 </span>
             </div>
 
-        </div>
+        
 
         </div>
 
