@@ -2,7 +2,7 @@
 *::before,
 *::after {
     box-sizing: inherit;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(244, 241, 238);
-    
+
+}
+a, .bottom_main__news, .bottom_main__event, .contact{
+    cursor: pointer;
 }
 
 /* une barre de navigation avec flex, un coté gauche avec logo représentnt 50% de l'espace et un menu burger représentant 50% du reste de l'espace */
@@ -188,99 +191,101 @@ body {
 
 /* Bannière image + titre puls + lien bienvenue à liévin + encart liens "accés direct" */
 
-.top__main{
-    display:flex;
+.top__main {
+    display: flex;
     flex-direction: column;
     margin-bottom: 50px;
 }
-.main__banner{
+
+.main__banner {
     width: 100%;
     height: 300px;
-margin-top: 70px;
-margin: 90px 0 0 0;
-background: url(../assets/ville_fondmobilfirst.jpg) no-repeat  ;
-background-size:cover;
-display: flex;
-flex-direction: column;
-justify-content: center;
+    margin-top: 70px;
+    margin: 90px 0 0 0;
+    background: url(../assets/ville_fondmobilfirst.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.banner__title{
+.banner__title {
     font-family: 'oldnewspapertype', sans-serif;
-    font-size:0.8rem;
-    width: 250px;
+    font-size: 1.1rem;
+    width: auto;
     height: 40px;
-    margin: -90px auto -40px auto;
-    color: #55d3fa;
+    margin: -90px auto -15px auto;
+    color: #ffffff;
     font-weight: 900;
-}
- h1::first-letter{
-    color: white;
-    text-shadow:0 4px 0 #170454, 0 -4px 0 #ff4045;
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-.banner__link{
-margin: 50px auto;
+    -webkit-text-stroke: 1px rgb(29, 91, 150);
 }
 
-.banner_link__text{
+
+.banner__link {
+    margin: 50px auto;
+}
+
+.banner_link__text {
     width: 170px;
-height: 30px;
+    height: 30px;
     padding-top: 2px;
     text-align: center;
     background: linear-gradient(#106d89, #2eadcd, #97e3f6);
     border-radius: 10px;
     border: 1px solid white;
-    color: #ffffff ;
+    color: #ffffff;
     font-family: 'oldnewspapertype', sans-serif;
-    font-weight:800;
+    font-weight: 800;
 }
 
-.banner__href{
-text-decoration: none;
+.banner__href {
+    text-decoration: none;
 
 }
-.top-main__square{
-    width:60%;
+
+.top-main__square {
+    width: 60%;
     height: auto;
-    margin:-110px auto auto auto;
+    padding: 20px;
+    margin: -110px auto auto auto;
     background-color: #ffffff;
-box-shadow: #232323;
-display: flex;
-flex-direction: column;
-justify-content: center;
-border-radius: 20px;
-box-shadow: 0 .5em .5em #0d7c9d,inset 0 0 0.5em .05em #487ece;
-align-items: center;
+    box-shadow: #232323;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 .5em .5em #0d7c9d, inset 0 0 0.5em .05em #487ece;
+    align-items: center;
 }
 
 .top-main__square a {
-text-decoration: none;
-width:150px;
+    text-decoration: none;
+    width: 150px;
 }
 
-.top_main__link_lievin{
+.top_main__link_lievin {
     margin-top: 20px;
 }
 
-.link_lievin__title{
+.link_lievin__title h2 {
     font-family: 'oldnewspapertype', sans-serif;
-    font-weight:800;
+    font-weight: 800;
     color: #106d89;
-    text-decoration : underline;
+    text-decoration: underline;
+padding-bottom: 20px;
 }
-.top_main__square_text{
-    width:155px;
-    height:50px;
+
+.top_main__square_text {
+    width: 155px;
+    height: 50px;
     padding-top: 10px;
-    margin:  auto;
+    margin: auto;
     background: linear-gradient(#106d89, #2eadcd, #97e3f6);
     border-radius: 10px;
     border: 2px solid white;
-    color: #ffffff ;
+    color: #ffffff;
     font-family: 'oldnewspapertype', sans-serif;
-    font-weight:800;
+    font-weight: 800;
     text-align: center;
     font-size: 0.8rem;
 }
@@ -293,40 +298,46 @@ width:150px;
 
 
 
-.calendar_weather{
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around ;
-align-items: center;
-margin: auto;
-padding: auto; 
-}
-
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< bottom Main>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-/* section évènements et actu/articles */
-
-.bottom_main__news_event{
-    width: 100%;
-   height: 500px;
-    margin: 50px auto;
+.calendar_weather {
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin: 10px auto;
+    padding: auto;
+}
+.calendar{
+    margin-bottom: 40px;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< bottom Main>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* section évènements et actu/articles */
+
+.bottom_main__news_event {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient( #2eadcd, #97e3f6);
+    border-radius: 20px;
+    box-shadow: 0 .5em .5em #0d7c9d, inset 0 0 0.5em .05em #487ece;
 }
 
 
-.bottom__main a{
-width: 100%;
-height: 100%;
+.bottom__main a {
+    width: 100%;
+    height: 100%;
 
 }
+
 /* Evènements */
-.bottom_main__event{
+.bottom_main__event {
     width: 300px;
     height: 169px;
     margin-bottom: 30px;
@@ -335,74 +346,114 @@ height: 100%;
     justify-content: center;
     text-align: center;
     margin: auto;
-    background: url(../assets/photoevenements.jpg) ;
- 
-   
+    background: url(../assets/photoevenements.jpg);
+
+
 }
-.bottom_main__event h3, .bottom_main__news h3{
+
+.bottom_main__event h3,
+.bottom_main__news h3 {
     -webkit-text-stroke: 1px rgb(75, 75, 211);
-    color: #55d3fa;
+    color: #2eadcd;
     font-family: 'oldnewspapertype', sans-serif;
-    font-weight:800;
+    font-weight: 800;
     font-size: 1.9rem;
 }
-.bottom_main__news{
 
-        width: 300px;
-        height: 169px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-        background: url(../assets/hotel-de-ville-lievin-1-854x534.jpg) ;
-       
-    }
+.bottom_main__news {
 
-
-.bottom_main__coordon_contact{
-display: flex;
-flex-direction: column;
-
-}
-
-.coordon__blason{
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.footer__mention_copyrit{
-    width: 100%;
-    height: 70px;
-    background: linear-gradient(#97e3f6, #2eadcd, #106d89 ); 
+    width: 300px;
+    height: 169px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto auto 10px auto;
     text-align: center;
+    margin: auto;
+    background: url(../assets/hotel-de-ville-lievin-1-854x534.jpg);
+}
+
+
+.bottom_main__coordon_contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto 40px auto;
 
 }
 
-.mention, .copyrit{
+.coordon__blason {
+    width: 80px;
+    height: 101px;
+    margin: 10px auto 0px auto;
+    background: url(../assets/blason.png) no-repeat;
+    background-size: 100%;
+}
+
+.coordon_adress__text {
+    width: auto;
+    height: auto;
+    margin: 20px auto 0px auto;
+    color: #170454;
+    font-family: 'oldnewspapertype', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.contact {
+    width: auto;
+    height: 50px;
+    margin: 20px auto 0px auto;
+    padding-top: 2px;
+    text-align: center;
+    background: linear-gradient(#106d89, #2eadcd, #97e3f6);
+    border-radius: 50px;
+    border: 1px solid white;
+    color: #ffffff;
+    font-family: 'oldnewspapertype', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.coordon_contact__horaire {
+    width: auto;
+    height: auto;
+    margin: 20px auto 10px auto;
+    color: #170454;
+    font-family: 'oldnewspapertype', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.footer__mention_copyrit {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient( #2eadcd, #106d89);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+}
+
+.mention {
+    height: auto;
     font-size: 22px;
     color: #ffffff;
     font-family: 'oldnewspapertype', sans-serif;
     font-size: 1.2rem;
     text-decoration: none;
-    
-
 }
 
-
-
-
+.copyrit {
+    height: auto;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'oldnewspapertype', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
