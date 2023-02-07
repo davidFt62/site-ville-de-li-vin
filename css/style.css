@@ -17,8 +17,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(244, 241, 238);
-
 }
+
+
 a, .bottom_main__news, .bottom_main__event, .contact{
     cursor: pointer;
 }
@@ -201,10 +202,10 @@ a, .bottom_main__news, .bottom_main__event, .contact{
 
 .main__banner {
     width: 100%;
-    height: 600px;
-    margin-top: 70px;
+    height:30vh;
     margin: 90px auto 0 auto;
-    background: url(../assets/ville_fondmobilfirst.jpg) no-repeat;
+ 
+    background: url(../assets/Ma\ ville\ Liévin\ vue\ du\ ciel.jpg) no-repeat;
     background-size: contain;
     display: flex;
     flex-direction: column;
