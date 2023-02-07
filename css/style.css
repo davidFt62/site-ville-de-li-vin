@@ -192,6 +192,8 @@ a, .bottom_main__news, .bottom_main__event, .contact{
 /* Bannière image + titre puls + lien bienvenue à liévin + encart liens "accés direct" */
 
 .top__main {
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
@@ -199,11 +201,11 @@ a, .bottom_main__news, .bottom_main__event, .contact{
 
 .main__banner {
     width: 100%;
-    height: 300px;
+    height: 600px;
     margin-top: 70px;
-    margin: 90px 0 0 0;
+    margin: 90px auto 0 auto;
     background: url(../assets/ville_fondmobilfirst.jpg) no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -385,9 +387,9 @@ padding-bottom: 20px;
 }
 
 .coordon__blason {
-    width: 80px;
-    height: 101px;
-    margin: 10px auto 0px auto;
+    width: 100px;
+    height: 121px;
+    margin: 50px auto 0px auto;
     background: url(../assets/blason.png) no-repeat;
     background-size: 100%;
 }
